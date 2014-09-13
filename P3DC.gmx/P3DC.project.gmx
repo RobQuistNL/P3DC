@@ -3,11 +3,105 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Extended Functions</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites"/>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="ExtendedFunctions">
+      <scripts name="testfunctions">
+        <script>scripts\test_suite_end.gml</script>
+        <script>scripts\test_suite_init.gml</script>
+        <script>scripts\test_assert_same.gml</script>
+      </scripts>
+      <scripts name="dechexfunctions">
+        <script>scripts\dectohex.gml</script>
+        <script>scripts\hextodec.gml</script>
+      </scripts>
+      <scripts name="stringfunctions">
+        <script>scripts\string_explode.gml</script>
+        <script>scripts\array_implode.gml</script>
+        <script>scripts\string_reverse.gml</script>
+        <script>scripts\string_mask.gml</script>
+        <script>scripts\url_encode.gml</script>
+        <script>scripts\url_decode.gml</script>
+        <script>scripts\string_ends_with.gml</script>
+        <script>scripts\string_starts_with.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="P3DC Scripts">
+      <scripts name="Init/Finish">
+        <script>scripts\p3dc_init.gml</script>
+        <script>scripts\p3dc_free.gml</script>
+      </scripts>
+      <scripts name="Model Creation/Replaction">
+        <script>scripts\p3dc_begin_model.gml</script>
+        <script>scripts\p3dc_end_model.gml</script>
+        <script>scripts\p3dc_add_model.gml</script>
+        <script>scripts\p3dc_set_trianglemask.gml</script>
+        <scripts name="Replacing Models">
+          <script>scripts\p3dc_begin_replace.gml</script>
+          <script>scripts\p3dc_end_replace.gml</script>
+          <script>scripts\p3dc_clear_model.gml</script>
+        </scripts>
+        <scripts name="Overwriting Models">
+          <script>scripts\p3dc_begin_overwrite.gml</script>
+          <script>scripts\p3dc_end_overwrite.gml</script>
+          <script>scripts\p3dc_overwrite_triangle.gml</script>
+          <script>scripts\p3dc_overwrite_block.gml</script>
+          <script>scripts\p3dc_overwrite_floor.gml</script>
+          <script>scripts\p3dc_overwrite_wall.gml</script>
+          <script>scripts\p3dc_overwrite_cylinder.gml</script>
+          <script>scripts\p3dc_overwrite_cone.gml</script>
+        </scripts>
+        <scripts name="Optimizations">
+          <script>scripts\p3dc_split_model.gml</script>
+        </scripts>
+        <scripts name="Primitives">
+          <script>scripts\p3dc_add_triangle.gml</script>
+          <script>scripts\p3dc_add_block.gml</script>
+          <script>scripts\p3dc_add_floor.gml</script>
+          <script>scripts\p3dc_add_wall.gml</script>
+          <script>scripts\p3dc_add_cylinder.gml</script>
+          <script>scripts\p3dc_add_cone.gml</script>
+        </scripts>
+      </scripts>
+      <scripts name="Return Values">
+        <script>scripts\p3dc_get_triangles.gml</script>
+        <script>scripts\p3dc_get_models.gml</script>
+        <script>scripts\p3dc_get_splitid.gml</script>
+        <script>scripts\p3dc_get_lastmask.gml</script>
+        <script>scripts\p3dc_triangle_data.gml</script>
+      </scripts>
+      <scripts name="Collision Detection">
+        <scripts name="Collision">
+          <script>scripts\p3dc_check.gml</script>
+          <script>scripts\p3dc_check_still.gml</script>
+          <script>scripts\p3dc_check_rotation.gml</script>
+          <script>scripts\p3dc_check_split.gml</script>
+        </scripts>
+        <scripts name="Rays">
+          <script>scripts\p3dc_ray.gml</script>
+          <script>scripts\p3dc_ray_still.gml</script>
+          <script>scripts\p3dc_ray_first.gml</script>
+          <script>scripts\p3dc_ray_split.gml</script>
+          <script>scripts\p3dc_ray_rotation.gml</script>
+        </scripts>
+        <scripts name="Rotation">
+          <script>scripts\p3dc_set_modrot.gml</script>
+        </scripts>
+      </scripts>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <object>objects\ExtendedFunctions_obj_test</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\ExtendedFunctions_rm_test</room>
+  </rooms>
   <constants number="2">
     <constant name="GM_build_date">0</constant>
     <constant name="GM_version">0</constant>
