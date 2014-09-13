@@ -12,7 +12,7 @@ Snake_PL: Creating GMAPI, P3DC uses this to make calling all the functions faste
 Thomas Moller: Some of ModMod Collisions Code was based off of his code (the math)
 
 */
-n="P3DC.dll";
+n="P3DC_v6.0.1.dll";
 
 //**Model Creation
 global.p3dc_bdm = external_define(n,"bdm",dll_cdecl,ty_real,0);

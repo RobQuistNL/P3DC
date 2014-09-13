@@ -3,12 +3,54 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="3" name="datafiles">
+    <datafiles number="3" name="models">
+      <datafile>
+        <name>map_model.d3d</name>
+        <exists>-1</exists>
+        <size>115449</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>map_model.d3d</filename>
+      </datafile>
+    </datafiles>
+    <datafile>
+      <name>P3DC_v6.0.1.dll</name>
+      <exists>-1</exists>
+      <size>87040</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>5242944</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>P3DC_v6.0.1.dll</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions>
     <extension index="0">extensions\Extended Functions</extension>
   </NewExtensions>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_bullet_hole</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\bck_wall</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="ExtendedFunctions">
@@ -96,15 +138,27 @@
       </scripts>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_main</font>
+  </fonts>
   <objects name="objects">
     <object>objects\ExtendedFunctions_obj_test</object>
+    <objects name="P3DC_Demo">
+      <object>objects\obj_controller</object>
+      <object>objects\obj_bullethole</object>
+      <object>objects\obj_spark</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="P3DC_Demo">
+      <room>rooms\demo</room>
+      <room>rooms\unittest</room>
+    </rooms>
     <room>rooms\ExtendedFunctions_rm_test</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">0</constant>
-    <constant name="GM_version">0</constant>
+    <constant name="GM_build_date">41895.7240189468</constant>
+    <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
